@@ -1,0 +1,153 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">  
+    
+    
+    
+    
+    
+
+<!-- 	<import resource="classpath:dao-context.xml"/>
+	 <import resource="classpath:common-context.xml"/>
+	 <context:annotation-config/> -->
+	
+<!-- 	<context:annotation-config/> -->
+	
+	<!-- <context:component-scan base-package="org.omnypay.mobileapp.webservices.impl" />
+	<context:component-scan base-package="com.omnypay.merchant.kohls.servicesImpl" />
+	 -->
+	
+	
+	<!-- 
+	<context:component-scan base-package="com.omnypay.*,org.omnypay.*"/>
+	
+	<context:property-placeholder location="file:${propfilepath}/cloud_cr3.properties"/>
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
+		<property name="driverClassName" value="${jdbc.driverClassName}"/>
+		<property name="url" value="${jdbc.url}"/>
+		<property name="username" value="${jdbc.username}"/>
+		<property name="password" value="${jdbc.password}"/>
+	</bean>
+	
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="annotatedClasses">
+			<list>			  
+				<value>com.omnypay.dao.bo.CloudSvrSecQuesMaster</value>
+				<value>com.omnypay.dao.bo.CloudSvrUser</value>
+				<value>com.omnypay.dao.bo.CloudSvrUsersProfile</value>
+				<value>com.omnypay.dao.bo.CloudSvrUsersSecQuestion</value>
+				<value>com.omnypay.dao.bo.CloudSvrTxn</value>
+				<value>com.omnypay.dao.bo.CloudSvrTxnEntity</value>
+				<value>com.omnypay.dao.bo.CloudSvrPasswordsHistory</value>
+				<value>com.omnypay.dao.bo.CloudSvrPosCon</value>
+				<value>com.omnypay.dao.bo.CloudSvrBusinessEntityInfo</value>
+				<value>com.omnypay.dao.bo.CloudSvrDemographics</value>
+				<value>com.omnypay.dao.bo.CloudSvrPGState</value>
+				<value>com.omnypay.dao.bo.CloudSvrPGCountry</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${jdbc.dialect}</prop>
+				<prop key="hibernate.show_sql">${jdbc.true}</prop>
+				<prop key="hibernate.hbm2ddl.auto">${jdbc.update}</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	DAO classes
+	 <bean id="secQuestionDao" class="com.omnypay.dao.impl.SecurityQuestionDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean> 
+	
+	<bean id="userDao" class="com.omnypay.dao.impl.UserDaoImpl">
+	</bean>
+	
+	
+	<bean id="txnDao" class="com.omnypay.dao.impl.TransactionDaoImpl">
+	</bean>
+	
+	<bean id="passwordDao" class="com.omnypay.dao.impl.PasswordDaoImpl">
+	</bean>
+	
+	<bean id="ecommerceDAO" class="com.omnypay.dao.impl.EcommerceDAOImpl">
+	</bean>
+	
+	<bean id="commonDAO" class="com.omnypay.dao.impl.CommonDaoImpl">
+	</bean>
+	
+	
+	<tx:annotation-driven  transaction-manager="transactionManager"/>
+	
+	<bean id="secQuestionService" 
+	class="com.omnypay.business.service.impl.SecurityQuestionServiceImpl" />	
+	
+	<bean id="userService" 
+	class="com.omnypay.business.service.impl.UserServiceImpl"/>
+	
+	<bean id="passwordService" 
+	class="com.omnypay.business.service.impl.PasswordServiceImpl"/>
+	
+	
+	<bean id="emailService" 
+	class="org.omnypay.email.service.EmailService"/>
+	
+		
+	<bean id="txnService" 
+	class="com.omnypay.business.service.impl.TransactionServiceImpl"/>
+	
+		
+	<bean id="cardOnFileService" 
+	class="org.omnypay.httpclient.services.Impl.CardOnFileServiceImpl"/>
+	
+	<bean id="hceService" 
+	class="com.omnypay.business.service.impl.HceTokenServiceImpl"/>
+	
+	<bean id="posService" 
+	class="com.omnypay.business.service.impl.PosServiceImpl"/>
+	
+	<bean id="ecommService" 
+	class="com.omnypay.business.service.impl.EcommerceServiceImpl"/>
+	
+	
+	<bean id="mitekServerService" 
+	class="com.omnypay.business.service.impl.MitekServerService"/>
+	
+	
+	
+	
+	<bean id="accountService" 
+	class="com.omnypay.business.service.impl.AccountServiceImpl"/>
+	
+	
+	
+	
+	<bean id="commonService" 
+	class="com.omnypay.business.service.impl.CommonServiceImpl"/>
+	
+	<bean id="merchantServiceRoute" 
+	class="com.omnypay.merchant.services.MerchantServiceRoute"/>
+	
+	
+	<bean id="merchantUserServices" 
+	class="com.omnypay.merchant.services.MerchantUserServices"/>
+	
+	
+	
+	
+	<bean id="kohlUserService" 
+	class="com.omnypay.merchant.kohls.servicesImpl.KohlUserServiceImpl"/> -->
+	
+</beans>

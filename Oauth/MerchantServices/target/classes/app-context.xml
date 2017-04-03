@@ -1,0 +1,94 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">  
+    
+
+	
+<!-- 	<context:annotation-config/> -->
+	
+	<!-- <context:component-scan base-package="org.omnypay.mobileapp.webservices.impl" />
+	<context:component-scan base-package="com.omnypay.merchant.kohls.servicesImpl" />
+	 -->
+	
+	
+	
+	<context:component-scan base-package="com.omnypay.*,org.omnypay.*"/>
+	
+
+	
+	
+
+	
+	
+	<bean id="merchantUserServices" 
+	class="com.omnypay.merchant.services.MerchantUserServices"/>
+	
+	<bean id="merchantSecurityQuestionService" 
+	class="com.omnypay.merchant.services.MerchantSecurityQuestionService"/>
+	
+	<bean id="merchantPasswordService" 
+	class="com.omnypay.merchant.services.MerchantPasswordService"/>
+	
+	<bean id="merchantAccountService" 
+	class="com.omnypay.merchant.services.MerchantAccountService"/>
+	
+	<bean id="merchantCustomerService" 
+	class="com.omnypay.merchant.services.MerchantCustomerService"/>
+	
+	<bean id="merchantTransactionService" 
+	class="com.omnypay.merchant.services.MerchantTransactionService"/>
+	
+	<bean id="merchantCouponService" 
+	class="com.omnypay.merchant.services.MerchantCouponServices"/>
+	
+	
+	
+	<!--KOHLS SERVICE call start  -->
+	
+	<bean id="merchantServiceRoute" 
+	class="com.omnypay.merchant.services.MerchantServiceRoute"/>
+	
+	
+	<bean id="kohlUserService" 
+	class="com.omnypay.merchant.kohls.servicesImpl.KohlUserServiceImpl"/>
+	
+	<bean id="kohlSecurityQuestionService" 
+	class="com.omnypay.merchant.kohls.servicesImpl.KohlSecurityQuestionServiceImpl"/>
+	
+	<bean id="kohlPasswordService" 
+	class="com.omnypay.merchant.kohls.servicesImpl.KohlPasswordServiceImpl"/>
+	
+	
+	<bean id="kohlAccountService" 
+	class="com.omnypay.merchant.kohls.servicesImpl.KohlAccountServiceImpl"/>
+	
+	<bean id="kohlCustomerService" 
+	class="com.omnypay.merchant.kohls.servicesImpl.KohlCustomerServiceImpl"/>
+	
+	
+	<bean id="kohlTransactionService" 
+	class="com.omnypay.merchant.kohls.servicesImpl.KohlTransactionServiceImpl"/>
+	
+	<bean id="kohlCouponRewardService" 
+	class="com.omnypay.merchant.kohls.servicesImpl.KohlCouponRewardServiceImpl"/>
+	
+	<!---KOHLS SERVICE call end  -->
+	
+	
+	
+	<!--KOHLS API call start  -->
+	
+	
+	<bean id="kohlApiUserService" 
+	class="com.omnypay.api.servicesImpl.KohlApiUserServicesImpl"/>
+	
+	
+	<!-- API call end  -->
+	
+	
+	
+</beans>
